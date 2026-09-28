@@ -1,0 +1,16 @@
+# Codex equivalents of the servers in ../.mcp.json.
+
+[mcp_servers.chrome-devtools]
+command = "cmd"
+args = ["/c", "npx", "-y", "chrome-devtools-mcp@latest"]
+startup_timeout_sec = 60
+enabled = true
+
+[mcp_servers.context7]
+url = "https://mcp.context7.com/mcp"
+http_headers_helper = 'node "D:/demo/qc-mcp-demo/.codex/context7-headers.cjs"'
+enabled = true
+
+[mcp_servers.figma]
+url = "https://mcp.figma.com/mcp"
+enabled = true
